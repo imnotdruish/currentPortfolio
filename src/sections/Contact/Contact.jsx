@@ -4,7 +4,7 @@ function Contact() {
   return (
     <section id="contact" className={styles.container}>
       <h1 className="sectionTitle">Contact</h1>
-      <form method="POST" action="https://formsubmit.co/9587700ea931bc22fc8edeb0a0782b97">
+      <form method="POST" action="https://getform.io/f/pamqzgla">
         <div className="formGroup">
           <label htmlFor="name" hidden>
             Name
@@ -29,7 +29,7 @@ function Contact() {
             required 
           />
           <input type="hidden" name="_subject" value="Web Development Inquiry" />
-          <input type="hidden" name="_autoresponse" value="Thank you for your interest. I will get back to you as soon as possible." />
+          <input type="hidden" name="_gotcha" style="display:none !important" />
         </div>
         <div className="formGroup">
           <label htmlFor="message" hidden>
