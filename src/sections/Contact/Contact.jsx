@@ -29,7 +29,6 @@ function Contact() {
             required 
           />
           <input type="hidden" name="_subject" value="Web Development Inquiry" />
-          <input type="hidden" name="_gotcha" style="display:none !important" />
         </div>
         <div className="formGroup">
           <label htmlFor="message" hidden>
