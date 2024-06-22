@@ -2,12 +2,6 @@ import styles from './HeroStyles.module.css';
 import heroImg from '../../assets/heroImg.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
-import twitterLight from '../../assets/twitterLight.svg';
-import twitterDark from '../../assets/twitterDark.svg';
-import githubLight from '../../assets/githubLight.svg';
-import githubDark from '../../assets/githubDark.svg';
-import linkedinLight from '../../assets/linkedinLight.svg';
-import linkedinDark from '../../assets/linkedinDark.svg';
 import CV from '../../assets/cv.pdf';
 import { useTheme } from '../../common/ThemeContext';
 
@@ -15,9 +9,6 @@ function Hero() {
   const { theme, toggleTheme } = useTheme();
 
   const themeIcon = theme === 'light' ? sun : moon;
-  const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
-  const githubIcon = theme === 'light' ? githubLight : githubDark;
-  const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
 
   return (
     <section id="hero" className={styles.container}>
@@ -45,13 +36,13 @@ function Hero() {
         </h2>
         <span>
           <a href="https://x.com/imnotdruish" target="_blank">
-            <img src={twitterIcon} alt="Twitter Icon" />
+            <i className="fa-brands fa-square-x-twitter"></i>
           </a>
           <a href="https://github.com/imnotdruish" target="_blank">
-            <img src={githubIcon} alt="Github Icon" />
+            <i className="fa-brands fa-square-github"></i>
           </a>
           <a href="www.linkedin.com/in/dan-june-97909520" target="_blank">
-            <img src={linkedinIcon} alt="Linkedin Icon" />
+            <i className="fa-brands fa-linkedin"></i>
           </a>
         </span>
         <p className={styles.description}>

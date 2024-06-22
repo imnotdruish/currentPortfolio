@@ -1,21 +1,21 @@
 :root {
-  --bg-clr: #FFF;
-  --btn-clr: #0987f2;
-  --btn-text-clr: #FFF;
-  --project-card-bg: #ffffff00;
-  --txt-clr: #222;
-  --form-txt-clr: #555;
-  --footer-txt-clr: #888;
+  --bg-clr: hsl(127, 93%, 91%);
+  --btn-clr: hsl(0, 0%, 13%);
+  --btn-txt-clr: hsl(127, 93%, 91%);
+  --project-card-bg: hsl(0, 0%, 13%);
+  --txt-clr: hsl(0, 0%, 13%);
+  --form-txt-clr: hsl(0, 0%, 33%);
+  --footer-txt-clr: hsl(0, 0%, 13%);
 }
 
 [data-theme='dark'] {
-  --bg-clr: #222;
-  --btn-clr: #fff;
-  --btn-text-clr: #222;
-  --project-card-bg: #fff;
-  --txt-clr: #fff;
-  --form-txt-clr: #fff;
-  --footer-txt-clr: #bbb;
+  --bg-clr: hsl(0, 0%, 13%);
+  --btn-clr: hsl(127, 93%, 91%);
+  --btn-txt-clr: hsl(0, 0%, 13%);
+  --project-card-bg: hsl(127, 93%, 91%);
+  --txt-clr: hsl(127, 93%, 91%);;
+  --form-txt-clr: hsl(127, 93%, 91%);
+  --footer-txt-clr: hsl(0, 0%, 73%);
 }
 
 body {
@@ -59,7 +59,7 @@ h1 {
 
 p {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .sectionTitle {

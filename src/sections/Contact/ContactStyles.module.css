@@ -33,6 +33,7 @@ input, textarea {
 
 ::placeholder {
   color: var(--form-txt-clr);
+  font-weight: 400;
 }
 
 input[type='submit'] {

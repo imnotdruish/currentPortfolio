@@ -1,12 +1,22 @@
 import React from 'react'
 import styles from './ProjectsStyles.module.css';
-import adminPanel from '../../assets/adminPanel.png';
-import todoList from '../../assets/todoList.svg';
+import refineLight from '../../assets/refineLight.svg';
+import refineDark from '../../assets/refineDark.svg';
+import todoListLight from '../../assets/todoListLight.svg';
+import todoListDark from '../../assets/todoListDark.svg';
 import pokemonSearch from '../../assets/pokemonSearch.png';
-import frontendMentor from '../../assets/frontendMentor.svg';
+import frontendMentorLight from '../../assets/frontendMentorLight.svg';
+import frontendMentorDark from '../../assets/frontendMentorDark.svg';
 import ProjectCard from '../../common/ProjectCard';
+import { useTheme } from '../../common/ThemeContext';
 
 function Projects() {
+  const { theme } = useTheme();
+
+  const refineIcon = theme === 'light' ? refineLight : refineDark;
+  const todoIcon = theme === 'light' ? todoListLight : todoListDark;
+  const frontendMentorIcon = theme === 'light' ? frontendMentorLight : frontendMentorDark;
+
   return (
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">
@@ -14,13 +24,13 @@ function Projects() {
       </h1>
       <div className={styles.projectsContainer}>
         <ProjectCard 
-          src={adminPanel} 
+          src={refineIcon} 
           link='https://github.com/imnotdruish/dashboard' 
           h3="Refine"
           p="Admin Kanban Board"
         />
         <ProjectCard 
-          src={todoList} 
+          src={todoIcon} 
           link='https://github.com/imnotdruish/reactjs-todolist' 
           h3="Todo List"
           p="React Todo List"
@@ -32,7 +42,7 @@ function Projects() {
           p="Pokemon API Page"
         />
       <ProjectCard 
-          src={frontendMentor} 
+          src={frontendMentorIcon} 
           link='https://frontendmentor.io/profile/imnotdruish' 
           h3="Frontend Mentor"
           p="Challenges"
