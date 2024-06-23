@@ -4,7 +4,8 @@ import refineLight from '../../assets/refineLight.svg';
 import refineDark from '../../assets/refineDark.svg';
 import todoListLight from '../../assets/todoListLight.svg';
 import todoListDark from '../../assets/todoListDark.svg';
-import pokemonSearch from '../../assets/pokemonSearch.png';
+import pokemonSearchLight from '../../assets/pokemonSearchLight.svg';
+import pokemonSearchDark from '../../assets/pokemonSearchDark.svg';
 import frontendMentorLight from '../../assets/frontendMentorLight.svg';
 import frontendMentorDark from '../../assets/frontendMentorDark.svg';
 import ProjectCard from '../../common/ProjectCard';
@@ -15,6 +16,7 @@ function Projects() {
 
   const refineIcon = theme === 'light' ? refineLight : refineDark;
   const todoIcon = theme === 'light' ? todoListLight : todoListDark;
+  const pokemonSearchIcon = theme === 'light' ? pokemonSearchLight : pokemonSearchDark;
   const frontendMentorIcon = theme === 'light' ? frontendMentorLight : frontendMentorDark;
 
   return (
@@ -36,7 +38,7 @@ function Projects() {
           p="React Todo List"
         />
         <ProjectCard 
-          src={pokemonSearch} 
+          src={pokemonSearchIcon} 
           link='https://github.com/imnotdruish/pokemonSearch' 
           h3="Pokemon"
           p="Pokemon API Page"
