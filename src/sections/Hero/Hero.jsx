@@ -46,7 +46,7 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-          Special Information about me and my goals here
+          I have spent 12+ years as a Endpoint Engineer while working towards a career in full stack development. I love coding, web development, and video games. I have been working with HTML, CSS, JavaScript, React, TypeScript, and Node.js.
         </p>
         <a href={CV} download>
           <button className="hover">Resume</button>
