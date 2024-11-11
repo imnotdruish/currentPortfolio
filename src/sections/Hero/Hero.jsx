@@ -32,7 +32,7 @@ function Hero() {
           June
         </h1>
         <h2>
-          Frontend Developer
+          Frontend Developer and Endpoint Engineer
         </h2>
         <span>
           <a href="https://x.com/imnotdruish" target="_blank">
@@ -41,7 +41,7 @@ function Hero() {
           <a href="https://github.com/imnotdruish" target="_blank">
             <i className="fa-brands fa-square-github"></i>
           </a>
-          <a href="www.linkedin.com/in/dan-june-97909520" target="_blank">
+          <a href="https://linkedin.com/in/dan-june-97909520" target="_blank">
             <i className="fa-brands fa-linkedin"></i>
           </a>
         </span>
