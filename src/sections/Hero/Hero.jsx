@@ -41,7 +41,7 @@ function Hero() {
           <a href="https://github.com/imnotdruish" target="_blank">
             <i className="fa-brands fa-square-github"></i>
           </a>
-          <a href="https://linkedin.com/in/dan-june-97909520" target="_blank">
+          <a href="https://linkedin.com/in/danjune" target="_blank">
             <i className="fa-brands fa-linkedin"></i>
           </a>
         </span>
